@@ -7,10 +7,11 @@
         <div class="container">
             <div class="featured-property-half d-flex ">
                 <div class="row">
-                    <div class="col-sm-12 m-5">
+                    <div class="col-sm-12 ml-5 mr-5 mt-5">
                         <h2>{{$artikel->title}}</h2>
                         <h6>Ditulis Oleh : {{$artikel->user->name}}</h6>
                     </div>
+
                     <div class="col-sm-12">
                         <div class="text-center">
                             <img src="{{ url($artikel->img) }}" width="600px" height="400px">

@@ -23,7 +23,7 @@
                 <p class="card-text text-center" style="margin-top: 31px; font-size: 12px; color: rgba(0, 0, 0, 0.54);">
                   Atau masukkan akun email anda</p>
 
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action=" /mattama">
                     @csrf
                     <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" style="margin-top: 33px;" id="exampleInputEmail1" 
                     aria-describedby="emailHelp" placeholder="Enter email" value="{{old('email')}}">

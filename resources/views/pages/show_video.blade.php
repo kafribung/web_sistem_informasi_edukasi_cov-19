@@ -7,7 +7,7 @@
         <div class="container">
             <div class="featured-property-half d-flex ">
                 <div class="row">
-                    <div class="col-sm-12 m-5">
+                    <div class="col-sm-12 ml-5 mr-5 mt-5 ">
                         <h2>{{$video->title}}</h2>
                         <h6>Ditulis Oleh : {{$video->user->name}}</h6>
                     </div>
@@ -16,7 +16,7 @@
                             <iframe style="width:600px; height:400px;" src="{{$video->video}}"></iframe>
                         </div>
                     </div>
-                    <div class="col-sm-12 ml-5 mr-5 mb-5">
+                    <div class="col-sm-12 m-4">
                         <div class="text">
                             <div class="mb-5">
                                 {!! $video->description !!}

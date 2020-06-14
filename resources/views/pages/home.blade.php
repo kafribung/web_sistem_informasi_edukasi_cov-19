@@ -63,7 +63,7 @@
                         <!-- All Artikels -->
                         <div class="row">
                             <div class="col-sm-12 section-heading style-2">
-                                <h4>Artikels</h4>
+                                <h4>Artikel Lengkap</h4>
                                 <div class="line"></div>
                             </div>
 
@@ -95,7 +95,7 @@
                         <!-- All Videos -->
                         <div class="row">
                             <div class="col-sm-12 section-heading style-2">
-                                <h4>Videos</h4>
+                                <h4>Video Lengkap</h4>
                                 <div class="line"></div>
                             </div>
 
@@ -141,40 +141,34 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="text-center">Lebih Dari <a href="">1.000</a> Orang Meninggal Pada Penyakit Ini </h4>
+                            <h4 class="text-center">Lebih Dari <a href="">15.000</a> Orang Sembuh dari Penyakit Ini </h4>
                         </div>
                     </div>
     
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-sm-4">
-                            <center>
-                                <div class="count-box">
+                                <div class="count-box ">
                                     <div class="box1">
                                         <span data-toggle="counter-up">{{$indonesia[0]['positif']}}</span>
                                     </div>
                                     <p><strong>Terjangkit</strong></p>
                                 </div>
-                            </center>
                         </div>
                         <div class="col-sm-4">
-                            <center>
                                 <div class="count-box">
                                     <div class="box2">
                                         <span data-toggle="counter-up">{{$indonesia[0]['sembuh']}}</span>
                                     </div>
                                     <p><strong>Sembuh</strong></p>
                                 </div>
-                            </center>
                         </div>
                         <div class="col-sm-4">
-                            <center>
                                 <div class="count-box">
                                     <div class="box3">
                                         <span data-toggle="counter-up">{{$indonesia[0]['meninggal']}}</span>
                                     </div>
                                     <p><strong>Meninggal</strong></p>
                                 </div>
-                            </center>
                         </div>
                     </div>
     
@@ -236,8 +230,8 @@
                         </div>
                     </div>
     
-                    <div class="row">
-                        <div class="col-sm-4 text-center">
+                    <div class="row text-center">
+                        <div class="col-sm-4">
                             <div class="count-box">
                                 <div class="box1">
                                     <span data-toggle="counter-up">{{$global_positif['value']}}</span>
@@ -245,7 +239,7 @@
                                 <p><strong>Terjangkit</strong></p>
                             </div>
                         </div>
-                        <div class="col-sm-4 text-center">
+                        <div class="col-sm-4">
                             <div class="count-box">
                                 <div class="box2">
                                     <span data-toggle="counter-up">{{$global_sembuh['value']}}</span>
@@ -253,7 +247,7 @@
                                 <p><strong>Sembuh</strong></p>
                             </div>
                         </div>
-                        <div class="col-sm-4 text-center">
+                        <div class="col-sm-4">
                             <div class="count-box">
                                 <div class="box3">
                                     <span data-toggle="counter-up">{{$global_meninggal['value']}}</span>
@@ -263,7 +257,7 @@
                         </div>
                     </div>
     
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col-sm-12">
                             <div class="text-peta">
                                 <h5 class="text-center">Tabel Sebaran</h5>
@@ -309,7 +303,7 @@
         
         <!--::End Hotline ::-->
     
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="bg">
                     <div class="row">

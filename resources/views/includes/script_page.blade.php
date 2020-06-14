@@ -33,3 +33,5 @@
 <script src="{{ asset('asset/js/main.js') }}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+{{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+
