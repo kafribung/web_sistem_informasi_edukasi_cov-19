@@ -17,8 +17,8 @@ class HomeController extends Controller
     // READ
     public function index()
     {
-        $artikel = Artikel::with('user')->inRandomOrder()->first();
-        $video   = Video::with('user')->inRandomOrder()->first();
+        $artikel = Artikel::with('user')->latest()->first();
+        $video   = Video::with('user')->latest()->first();
 
         $artikels= Artikel::with('user')->orderBy('id', 'DESC')->paginate(8); 
         $videos= Video::with('user')->orderBy('id', 'DESC')->paginate(4); 

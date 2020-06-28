@@ -3,30 +3,28 @@
         <div class="row justify-content-around">
             <div class="col-sm-4">
                 <div class="single_footer_part">
-                    <img src="img/logo.png" class="footer_logo" alt="" style="width: 100px;">
-                    <p>Cov.id merupakan situs Website untuk anda yang merasa cemas dan takut karena Covid-19
+                    <img src="{{ asset('asset/img/logo_footer.png') }}" class="footer_logo" alt="" style="width: 100px;">
+                    <p>
+                        Cov.id merupakan situs Website untuk anda yang merasa cemas dan takut karena Covid-19
                     </p>
-
                 </div>
             </div>
             <div class="col-sm-4">
-                <center>
-                    <div class="single_footer_part">
-                        <h4>Fitur-Fitur</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="">Informasi</a></li>
-                            <li><a href="">Kasus</a></li>
-                            <li><a href="">Hotline</a></li>
-                            <li><a href="">About</a></li>
-                        </ul>
-                    </div>
-                </center>
+                <div class="single_footer_part">
+                    <h4>Fitur-Fitur</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/">Informasi</a></li>
+                        <li><a href="/">Kasus</a></li>
+                        <li><a href="/">Hotline</a></li>
+                        <li><a href="/">About</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="col-sm-4">
                 <div class="single_footer_part">
-                    <p>"Jangan Cemas dan Jangan Takut Kami Akan selalu menyediakan edukasi untuk anda serta
-                        informasi-informasi yang terpercaya dan terupdate mengenai Covid-19 "
+                    <p>"Jangan cemas, jangan takut dan jangan panuk kami akan selalu menyediakan edukasi untuk anda serta
+                        informasi-informasi yang terpercaya dan terupdate mengenai Covid-19"
                     </p>
                 </div>
             </div>

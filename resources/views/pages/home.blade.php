@@ -13,17 +13,17 @@
                                 <div class="line"></div>
                             </div>
                             <div class="image">
-                                <img src="{{ url($artikel->img)}}">
+                                <img title="{{$artikel->title}}" alt="{{$artikel->title}}" src="{{ url($artikel->img)}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="text mt-3">
+                            <div class="text" style="margin-top: 12%">
                                 <h3><a href="/show/artikel/{{$artikel->slug}}" class="post-title">{{$artikel->title}}</a></h3>
                                 <ul>
                                     <li>Ditulis Oleh : {{$artikel->user->name}}</li>
                                 </ul>
                                 <div class="mb-5">
-                                    {!! Str::limit($artikel->description, 200) !!}
+                                    {!! Str::limit($artikel->description, 500) !!}
                                 </div>
                                 <ul class="list-unstyled">
                                     <li><a href=""> <span class="flaticon-calendar"></span> </a>{{$artikel->created_at->format('d M Y')}}</li>
@@ -39,18 +39,18 @@
                                 <h4>Video Terbaru</h4>
                                 <div class="line"></div>
                             </div>
-                            <div class="image ml-4 mb-30">
-                                <iframe  style="width:530px; height:280px;" src="{{$video->video}}"></iframe>
+                            <div class="image ml-4 mb-30 mr-2">
+                                <iframe  style="width:100%; height:280px;" src="{{$video->video}}"></iframe>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="text mt-5">
+                        <div class="col-sm-6" >
+                            <div class="text" style="margin-top: 15%">
                                 <h3><a href="/show/video/{{$video->slug}}" class="post-title">{{$video->title}}</a></h3>
                                 <ul>
                                     <li>Ditulis Oleh : {{$video->user->name}}</li>
                                 </ul>
                                 <div class="mb-5">
-                                    {!! Str::limit($video->description, 200) !!}
+                                    {!! Str::limit($video->description, 500) !!}
                                 </div>
                                 <ul class="list-unstyled">
                                     <li><a href=""> <span class="flaticon-calendar"></span> </a>{{$video->created_at->format('d M Y')}}</li>
@@ -59,33 +59,36 @@
                         </div>
                     </div>
 
-                    <div class="pad">
+                    <div class="container">
                         <!-- All Artikels -->
                         <div class="row">
                             <div class="col-sm-12 section-heading style-2">
                                 <h4>Artikel Lengkap</h4>
                                 <div class="line"></div>
                             </div>
-
+                            
                             @foreach ($artikels as $artikel)
-                                <div class="col-sm-4">
-                                    <div class="single-post-area mb-80">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
-                                            <img src="{{$artikel->img}}" alt="">
-                                        </div>
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="/show/artikel/{{$artikel->slug}}" class="post-title">{{$artikel->title}}</a>
-                                            <div>{!! Str::limit($artikel->description, 200) !!}</div>
+                            <div class=" col-sm-4">
+                                <div class="single-post-area">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img title="{{$artikel->title}}" alt="{{$artikel->title}}" src="{{ url($artikel->img)}}">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <h4><a href="/show/video/{{$artikel->slug}}" class="post-title">{{$artikel->title}}</a></h4>
+                                            <ul>
+                                                <li>Ditulis Oleh : {{$artikel->user->name}}</li>
+                                            </ul>
+                                            <div>{!! Str::limit($artikel->description, 70) !!}</div>
                                             <ul class="list-unstyled">
                                                 <li><a href=""> <span class="flaticon-calendar"></span> </a>{{$artikel->created_at->format('d M Y')}}</li>
                                             </ul>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
                             @endforeach
-                            
+
                             <div class="col-sm-12">
                                 {{$artikels->links()}}
                             </div>
@@ -104,12 +107,15 @@
                                     <div class="single-post-area mb-80">
                                         <!-- Post Thumbnail -->
                                         <div class="post-thumbnail">
-                                            <iframe  src="{{$video->video}}"></iframe>
+                                            <iframe class="responsive-iframe"  src="{{$video->video}}"></iframe>
                                         </div>
                                         <!-- Post Content -->
                                         <div class="post-content">
-                                            <a href="/show/video/{{$video->slug}}" class="post-title">{{$video->title}}</a>
-                                            <div>{!! Str::limit($video->description, 200) !!}</div>
+                                            <h4><a href="/show/video/{{$video->slug}}" class="post-title">{{$video->title}}</a></h4>
+                                            <ul>
+                                                <li>Ditulis Oleh : {{$video->user->name}}</li>
+                                            </ul>
+                                            <div>{!! Str::limit($video->description, 70) !!}</div>
                                             <ul class="list-unstyled">
                                                 <li><a href=""> <span class="flaticon-calendar"></span> </a>{{$video->created_at->format('d M Y')}}</li>
                                             </ul>
@@ -131,7 +137,7 @@
         <!--::our client part start::-->
     
         <!--::Kasus::-->
-        <section class="kasus" id="kasus">
+        {{-- <section class="kasus" id="kasus">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -213,10 +219,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--::Kasus::-->
 
-        <section class="hotline" id="global">
+        {{-- <section class="hotline" id="global">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -298,12 +304,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--::Hotline::-->
         
         <!--::End Hotline ::-->
     
-        <section class="team" id="team">
+        {{-- <section class="team" id="team">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -348,7 +354,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--::our client part end::-->
     </div>
 
