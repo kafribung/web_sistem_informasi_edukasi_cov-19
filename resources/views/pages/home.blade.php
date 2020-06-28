@@ -137,7 +137,7 @@
         <!--::our client part start::-->
     
         <!--::Kasus::-->
-        {{-- <section class="kasus" id="kasus">
+        <section class="kasus" id="kasus">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -219,10 +219,10 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         <!--::Kasus::-->
 
-        {{-- <section class="hotline" id="global">
+        <section class="hotline" id="global">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -304,12 +304,12 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         <!--::Hotline::-->
         
         <!--::End Hotline ::-->
     
-        {{-- <section class="team" id="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -354,7 +354,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         <!--::our client part end::-->
     </div>
 
