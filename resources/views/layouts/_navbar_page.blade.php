@@ -19,16 +19,16 @@
                                 <a class="smoothScroll" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#informasi" class="smoothScroll">Informasi</a>
+                                <a href="{{Request::segment(1) == '' ? '#informasi' : '/'}} " class="smoothScroll">Informasi</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#kasus" class="smoothScroll">Kasus</a>
+                                <a href="{{Request::segment(1) == '' ? '#kasus' : '/'}}" class="smoothScroll">Kasus</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#global" class="smoothScroll">Global</a>
+                                <a href="{{Request::segment(1) == '' ? '#global' : '/'}}" class="smoothScroll">Global</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#team" class="smoothScroll">Team</a>
+                                <a href="{{Request::segment(1) == '' ? '#team' : '/'}}" class="smoothScroll">Team</a>
                             </li>
                         </ul>
                     </div>

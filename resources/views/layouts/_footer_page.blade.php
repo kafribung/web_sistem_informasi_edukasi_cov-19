@@ -11,7 +11,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="single_footer_part">
-                    <h4>Fitur-Fitur</h4>
+                    <h4>Bersatu melawan Covid-19</h4>
                     <ul class="list-unstyled">
                         <li><a href="/">Informasi</a></li>
                         <li><a href="/">Kasus</a></li>
@@ -37,7 +37,7 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script> All rights | by <a href="https://colorlib.com" target="_blank">Cov.Id</a>
+                        </script> All rights | by <a href="/">Cov.Id</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </P>
                 </div>
