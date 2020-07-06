@@ -20,31 +20,33 @@ class HomeController extends Controller
         $artikel = Artikel::with('user')->latest()->first();
         $video   = Video::with('user')->latest()->first();
 
-        $artikels= Artikel::with('user')->orderBy('id', 'DESC')->paginate(6); 
-        $videos= Video::with('user')->orderBy('id', 'DESC')->paginate(4); 
+        $artikels= Artikel::with('user')->orderBy('id', 'DESC')->get(); 
+        $videos= Video::with('user')->orderBy('id', 'DESC')->get(); 
 
         $teams = Team::orderBy('id', 'DESC')->get();
 
         // API KawalCorona
-        $indonesia = Http::get('https://api.kawalcorona.com/indonesia');
-        $provinsis = Http::get('https://api.kawalcorona.com/indonesia/provinsi');
+        // $indonesia = Http::get('https://api.kawalcorona.com/indonesia');
+        // $provinsis = Http::get('https://api.kawalcorona.com/indonesia/provinsi');
 
-        $globals          = Http::get('https://api.kawalcorona.com/');
-        $global_positif   = Http::get('https://api.kawalcorona.com/positif');
-        $global_sembuh    = Http::get('https://api.kawalcorona.com/sembuh');
-        $global_meninggal = Http::get('https://api.kawalcorona.com/meninggal');
+        // $globals          = Http::get('https://api.kawalcorona.com/');
+        // $global_positif   = Http::get('https://api.kawalcorona.com/positif');
+        // $global_sembuh    = Http::get('https://api.kawalcorona.com/sembuh');
+        // $global_meninggal = Http::get('https://api.kawalcorona.com/meninggal');
 
 
-        $indonesia = $indonesia->json();
-        $provinsis = $provinsis->json();
+        // $indonesia = $indonesia->json();
+        // $provinsis = $provinsis->json();
 
-        $globals          = $globals->json();
-        $global_positif   = $global_positif->json();
-        $global_sembuh    = $global_sembuh->json();
-        $global_meninggal = $global_meninggal->json();
+        // $globals          = $globals->json();
+        // $global_positif   = $global_positif->json();
+        // $global_sembuh    = $global_sembuh->json();
+        // $global_meninggal = $global_meninggal->json();
+
+        // 'indonesia','provinsis', 'globals','global_positif', 'global_sembuh', 'global_meninggal'
 
         return view('pages.home', 
-            compact('artikel', 'video', 'artikels', 'videos', 'teams', 'indonesia','provinsis', 'globals','global_positif', 'global_sembuh', 'global_meninggal')
+            compact('artikel', 'video', 'artikels', 'videos', 'teams')
         );
     }
 

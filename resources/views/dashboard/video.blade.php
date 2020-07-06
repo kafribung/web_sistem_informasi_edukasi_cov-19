@@ -14,19 +14,20 @@
 
         <div class="row">
              @foreach ($videos as $video)
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <aside class="profile-nav alt">
                         <section class="card">
                             <div class="card-header">
+                                <h5 class="badge badge-info">Vidoe</h5>
                                 <strong class="card-title mb-3">{{$video->title}}</strong>
                             </div>
 
                             <div class="card-header alt bg-dark">
-                                <iframe class="align-self-center mr-3" style="width:340px; height:200px;" src="{{$video->video}}"></iframe>
+                                <iframe class="align-self-center mr-3" style="width:100%" src="{{$video->video}}"></iframe>
                             </div>
 
                             <div class="card-body">
-                                {!! Str::limit($video->description, 200) !!}
+                                {!! Str::limit($video->description, 80) !!}
                             </div>
 
                             <hr>
