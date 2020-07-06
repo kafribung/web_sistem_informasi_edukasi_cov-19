@@ -18,6 +18,7 @@ Route::group(['middleware' => 'admin'], function () {
     Route::resource('/admin', 'AdminController');
     Route::resource('/artikel', 'ArtikelController');
     Route::resource('/video', 'VideoController');
+    Route::resource('/motivasi', 'MotivasiController');
     Route::resource('/team', 'TeamController');
 });
 

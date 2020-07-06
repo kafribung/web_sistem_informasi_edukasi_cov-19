@@ -33,6 +33,12 @@
                     <a href="/video/create"> <i class="menu-icon ti-pencil-alt "></i>Add Video</a>
                 </li>
 
+                <li class="menu-title">Motivasi</li>
+                <!-- /.menu-title -->
+                <li class="{{Request::segment(1) == 'motivasi' ? 'active' : ''}}">
+                    <a href="/motivasi"> <i class="menu-icon ti-pencil"></i>All Motivasi</a>
+                </li>
+
                 <li class="menu-title">Develop</li>
                 <!-- /.menu-title -->
                 <li class="{{Request::segment(1) == 'team' ? 'active' : ''}}">

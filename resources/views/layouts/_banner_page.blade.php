@@ -5,10 +5,13 @@
                 <div class="banner_text text-center">
                     <div class="banner_text_iner">
                         <h2>COVID-19 DAPAT DISEMBUHKAN</h2>
-                        <p>
-                            "Percayalah bahwa setiap penyakit selalu ada obatnya. Kamu hanya perlu berpikir positif dan bangkit dari keputusasaan
-                            . Tidaklah Allah menunrunkan penyakit, kecuali Dia juga menurunkan penawarnya"
-                        </p>
+                        @php
+                            use App\Models\Motivasi;
+                            $motivasi = Motivasi::inRandomOrder()->first();
+                        @endphp
+                        <div>
+                            {!! $motivasi->description !!}
+                        </div>
                         <a href="https://corona.alodokter.com/cek-risiko-tertular-virus-corona-gratis?ref=Cov.id" target="_blank" class="btn_2">Periksa Diri</a>
 
                         <img src="{{ asset('asset/img/ilustrasi.svg') }}">

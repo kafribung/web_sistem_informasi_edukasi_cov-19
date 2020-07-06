@@ -11,6 +11,8 @@ use App\Models\Artikel;
 use App\Models\Video;
 // Import DB Team
 use App\Models\Team;
+// Import DB Motivasi
+use App\Models\Motivasi;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,8 @@ class HomeController extends Controller
         $videos= Video::with('user')->orderBy('id', 'DESC')->get(); 
 
         $teams = Team::orderBy('id', 'DESC')->get();
+
+        $motivasi = Motivasi::inRandomOrder()->first();
 
         // API KawalCorona
         // $indonesia = Http::get('https://api.kawalcorona.com/indonesia');

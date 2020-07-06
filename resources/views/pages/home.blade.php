@@ -131,6 +131,64 @@
             </div>
         </section>
         <!--::our client part start::-->
+        <!--::Rumas Sakit::-->
+        <section class="kasus" id="kasus">
+            <div class="container">
+                <div class="bg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button href="#" class="btn btn-primary" disabled>Rumash Sakit Rujukan Covid-19</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <iframe style="height:1400px; width:100%; border: none;" src="https://databoks.katadata.co.id/datapublishembed/114994/132-rumah-sakit-rujukan-covid-19-di-indonesia"></iframe>
+                        </div>
+                    </div>
+    
+                    {{-- <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-peta">
+                                <h5 class="text-center">Tabel Sebaran</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 table-wrapper-scroll-y my-custom-scrollbar">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Provinsi</th>
+                                        <th scope="col">Positif</th>
+                                        <th scope="col">Sembuh</th>
+                                        <th scope="col">Meninggal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @php
+                                        $angkaAwal= 1
+                                    @endphp
+                                    @foreach ($provinsis as $provinsi)
+                                        <tr>
+                                            <th scope="row">{{$angkaAwal}}</th>
+                                            <td>{{$provinsi['attributes']['Provinsi']}}</td>
+                                            <td>{{number_format($provinsi['attributes']['Kasus_Posi'])}}</td>
+                                            <td>{{number_format($provinsi['attributes']['Kasus_Semb'])}}</td>
+                                            <td>{{number_format($provinsi['attributes']['Kasus_Meni'])}}</td>
+                                        </tr>
+                                    @php
+                                        $angkaAwal++
+                                    @endphp
+                                    @endforeach
+
+                                </tbody>
+                                </table>
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+        </section>
+        <!--::Rumah Sakit::-->
     
         {{-- <!--::Kasus::-->
         <section class="kasus" id="kasus">
