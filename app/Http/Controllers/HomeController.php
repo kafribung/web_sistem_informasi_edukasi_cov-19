@@ -20,7 +20,7 @@ class HomeController extends Controller
         $artikel = Artikel::with('user')->latest()->first();
         $video   = Video::with('user')->latest()->first();
 
-        $artikels= Artikel::with('user')->orderBy('id', 'DESC')->paginate(8); 
+        $artikels= Artikel::with('user')->orderBy('id', 'DESC')->paginate(6); 
         $videos= Video::with('user')->orderBy('id', 'DESC')->paginate(4); 
 
         $teams = Team::orderBy('id', 'DESC')->get();

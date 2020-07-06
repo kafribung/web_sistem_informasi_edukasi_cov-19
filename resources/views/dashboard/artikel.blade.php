@@ -14,10 +14,11 @@
 
         <div class="row">
              @foreach ($artikels as $artikel)
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <aside class="profile-nav alt">
                         <section class="card">
                             <div class="card-header">
+                                <h5 class="badge badge-success">Artikel</h5>
                                 <strong class="card-title mb-3">{{$artikel->title}}</strong>
                             </div>
 
@@ -26,7 +27,7 @@
                             </div>
 
                             <div class="card-body">
-                                {!! Str::limit($artikel->description, 200) !!}
+                                {!! Str::limit($artikel->description, 150) !!}
                             </div>
 
                             <hr>
