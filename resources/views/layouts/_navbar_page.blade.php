@@ -22,6 +22,9 @@
                                 <a href="{{Request::segment(1) == '' ? '#informasi' : '/'}} " class="smoothScroll">Informasi</a>
                             </li>
                             <li class="nav-item">
+                                <a href="{{Request::segment(1) == '' ? '#rumahSakit' : '/'}} " class="smoothScroll">RS Rujukan</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="{{Request::segment(1) == '' ? '#kasus' : '/'}}" class="smoothScroll">Kasus</a>
                             </li>
                             <li class="nav-item">

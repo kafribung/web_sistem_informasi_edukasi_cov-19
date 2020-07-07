@@ -78,7 +78,7 @@
                                     </div>
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <h4><a href="/show/video/{{$artikel->slug}}" class="post-title">{{$artikel->title}}</a></h4>
+                                        <h4><a href="/show/artikel/{{$artikel->slug}}" class="post-title">{{$artikel->title}}</a></h4>
                                             <ul>
                                                 <li>Ditulis Oleh : {{$artikel->user->name}}</li>
                                             </ul>
@@ -127,12 +127,12 @@
                         <!-- END All Videos -->
                     </div>
                 </div>
-
             </div>
+
         </section>
         <!--::our client part start::-->
         <!--::Rumas Sakit::-->
-        <section class="kasus" id="kasus">
+        <section class="kasus" id="rumahSakit">
             <div class="container">
                 <div class="bg">
                     <div class="row">
@@ -146,51 +146,19 @@
                         </div>
                     </div>
     
-                    {{-- <div class="row">
+                    <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-peta">
-                                <h5 class="text-center">Tabel Sebaran</h5>
-                            </div>
+                            <div class="pad">
+                                <img src="{{asset('asset/img/132-RS-Rujukan-Cov-id.png')}}" alt="Error" title="Gambar Rumah Sakit Rujukan">
+                            </div>     
                         </div>
-
-                        <div class="col-sm-12 table-wrapper-scroll-y my-custom-scrollbar">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">No</th>
-                                        <th scope="col">Provinsi</th>
-                                        <th scope="col">Positif</th>
-                                        <th scope="col">Sembuh</th>
-                                        <th scope="col">Meninggal</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @php
-                                        $angkaAwal= 1
-                                    @endphp
-                                    @foreach ($provinsis as $provinsi)
-                                        <tr>
-                                            <th scope="row">{{$angkaAwal}}</th>
-                                            <td>{{$provinsi['attributes']['Provinsi']}}</td>
-                                            <td>{{number_format($provinsi['attributes']['Kasus_Posi'])}}</td>
-                                            <td>{{number_format($provinsi['attributes']['Kasus_Semb'])}}</td>
-                                            <td>{{number_format($provinsi['attributes']['Kasus_Meni'])}}</td>
-                                        </tr>
-                                    @php
-                                        $angkaAwal++
-                                    @endphp
-                                    @endforeach
-
-                                </tbody>
-                                </table>
-                        </div>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </section>
         <!--::Rumah Sakit::-->
     
-        {{-- <!--::Kasus::-->
+        <!--::Kasus::-->
         <section class="kasus" id="kasus">
             <div class="container">
                 <div class="bg">
@@ -409,7 +377,7 @@
                 </div>
             </div>
         </section>
-        <!--::our client part end::--> --}}
+        <!--::our client part end::-->
     </div>
 
 @endsection

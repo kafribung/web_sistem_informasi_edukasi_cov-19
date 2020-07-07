@@ -30,27 +30,27 @@ class HomeController extends Controller
         $motivasi = Motivasi::inRandomOrder()->first();
 
         // API KawalCorona
-        // $indonesia = Http::get('https://api.kawalcorona.com/indonesia');
-        // $provinsis = Http::get('https://api.kawalcorona.com/indonesia/provinsi');
+        $indonesia = Http::get('https://api.kawalcorona.com/indonesia');
+        $provinsis = Http::get('https://api.kawalcorona.com/indonesia/provinsi');
 
-        // $globals          = Http::get('https://api.kawalcorona.com/');
-        // $global_positif   = Http::get('https://api.kawalcorona.com/positif');
-        // $global_sembuh    = Http::get('https://api.kawalcorona.com/sembuh');
-        // $global_meninggal = Http::get('https://api.kawalcorona.com/meninggal');
+        $globals          = Http::get('https://api.kawalcorona.com/');
+        $global_positif   = Http::get('https://api.kawalcorona.com/positif');
+        $global_sembuh    = Http::get('https://api.kawalcorona.com/sembuh');
+        $global_meninggal = Http::get('https://api.kawalcorona.com/meninggal');
 
 
-        // $indonesia = $indonesia->json();
-        // $provinsis = $provinsis->json();
+        $indonesia = $indonesia->json();
+        $provinsis = $provinsis->json();
 
-        // $globals          = $globals->json();
-        // $global_positif   = $global_positif->json();
-        // $global_sembuh    = $global_sembuh->json();
-        // $global_meninggal = $global_meninggal->json();
+        $globals          = $globals->json();
+        $global_positif   = $global_positif->json();
+        $global_sembuh    = $global_sembuh->json();
+        $global_meninggal = $global_meninggal->json();
 
-        // 'indonesia','provinsis', 'globals','global_positif', 'global_sembuh', 'global_meninggal'
+        // 
 
         return view('pages.home', 
-            compact('artikel', 'video', 'artikels', 'videos', 'teams')
+            compact('artikel', 'video', 'artikels', 'videos', 'teams', 'indonesia', 'provinsis', 'globals','global_positif', 'global_sembuh', 'global_meninggal')
         );
     }
 

@@ -14,6 +14,7 @@
                     <h4>Bersatu melawan Covid-19</h4>
                     <ul class="list-unstyled">
                         <li><a href="/">Informasi</a></li>
+                        <li><a href="/">RS Rujukan</a></li>
                         <li><a href="/">Kasus</a></li>
                         <li><a href="/">Hotline</a></li>
                         <li><a href="/">About</a></li>
