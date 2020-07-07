@@ -169,7 +169,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="text-center">Lebih Dari <a href="">15.000</a> Orang Sembuh dari Penyakit Ini </h4>
+                            <h4 class="text-center">Lebih Dari <a href="">29.000</a> Orang Sembuh dari Penyakit Ini </h4>
                         </div>
                     </div>
     

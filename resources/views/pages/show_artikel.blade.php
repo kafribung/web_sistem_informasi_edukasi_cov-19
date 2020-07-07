@@ -44,7 +44,13 @@
                             <h3>{{$artikel->title}}</h3>
                             <h6>Ditulis Oleh : {{$artikel->user->name}} - {{$artikel->created_at->format('d M Y')}} </h6>
                             <div class="line"></div>
+
+                            <div class="viewall mt-3">
+                                <div class="sharethis-inline-share-buttons"></div>
+                            </div>
                         </div>
+
+                        
                     </div>
 
                     <div class="col-sm-6">
@@ -53,7 +59,6 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        
                         <div class="mb-5">
                             {!! $artikel->description !!}
                         </div>

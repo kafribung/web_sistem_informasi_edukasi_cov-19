@@ -12,6 +12,10 @@
                             <h3>{{$video->title}}</h3>
                             <h6>Ditulis Oleh : {{$video->user->name}} - {{$video->created_at->format('d M Y')}} </h6>
                             <div class="line"></div>
+
+                            <div class="viewall mt-3">
+                                <div class="sharethis-inline-share-buttons"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-12">
