@@ -146,7 +146,7 @@
                         </div>
                     </div>
     
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col-sm-12">
                             <div class="pad">
                                 <img src="{{asset('asset/img/132-RS-Rujukan-Cov-id.png')}}" alt="Error" title="Gambar Rumah Sakit Rujukan">
