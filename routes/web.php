@@ -28,7 +28,6 @@ Route::get('/show/video/{slug}', 'HomeController@show_video');
 Route::post('/provinsi', 'HomeController@provinsi');
 
 
-
 // Auth Routes...
 Route::get('/login', function(){
     return abort('404');

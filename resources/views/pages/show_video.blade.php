@@ -7,9 +7,12 @@
         <div class="container">
             <div class="featured-property-half d-flex ">
                 <div class="row">
-                    <div class="col-sm-12 ml-5 mr-5 mt-5 ">
-                        <h2>{{$video->title}}</h2>
-                        <h6>Ditulis Oleh : {{$video->user->name}}</h6>
+                    <div class="col-sm-12">
+                        <div class="section-heading">
+                            <h3>{{$video->title}}</h3>
+                            <h6>Ditulis Oleh : {{$video->user->name}} - {{$video->created_at->format('d M Y')}} </h6>
+                            <div class="line"></div>
+                        </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="text-center">
